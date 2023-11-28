@@ -1,8 +1,20 @@
 namespace DesafioPOO.Models
 {
-    // TODO: Herdar da classe "Smartphone"
-    public class Iphone
+    public class Iphone : Smartphone
     {
-        // TODO: Sobrescrever o método "InstalarAplicativo"
+        // Propriedade específica para iPhone
+        public string FaceID { get; set; }
+
+        // Construtor
+        public Iphone(string numero, string imei, int memoria, string faceID) : base(numero, "iPhone", imei, memoria)
+        {
+            FaceID = faceID;
+        }
+
+        // Sobrescrever o método InstalarAplicativo
+        public override void InstalarAplicativo(string nome)
+        {
+            Console.WriteLine($"Instalando o aplicativo {nome} no {Modelo} com FaceID {FaceID}.");
+        }
     }
 }
