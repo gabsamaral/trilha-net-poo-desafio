@@ -17,7 +17,7 @@ nokia.InstalarAplicativo("TikTok");
 
 //Testar classe Iphone
 //Instanciando objeto iphone
-Iphone iphone = new Iphone("87654321","00895001013496",256);
+Iphone iphone = new Iphone("87654321","00895001013496",256,"New FaceID");
 
 //Chamando função Ligar() implementada na classe Smartphone
 iphone.Ligar();

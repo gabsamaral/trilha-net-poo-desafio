@@ -3,9 +3,12 @@ namespace DesafioPOO.Models
     // TODO: Herdar da classe "Smartphone"
     public class Iphone : Smartphone
     {
-        public Iphone(string numero, string imei, int memoria) : base(numero,"Iphone",imei, memoria)
+        // Propriedade específica de iphone
+        public string FaceID { get; set; }
+        public Iphone(string numero, string imei, int memoria, string faceid) : base(numero,"Iphone",imei, memoria)
         {
-            Console.WriteLine("Um smartphone do tipo Iphone foi criado");
+            FaceID = faceid;
+            Console.WriteLine($"Um smartphone do tipo Iphone foi criado com numero: {numero}");
         }
         
         // Sobrescrever (implementando) o método "InstalarAplicativo"
