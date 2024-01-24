@@ -1,27 +1,29 @@
-﻿using System;
-using DesafioPOO.Models;
+﻿﻿using DesafioPOO.Models;
 
-namespace DesafioPOO
-{
-    class Program
-    {
-        static void Main()
-        {
-            // Teste com a classe Nokia
-            Console.WriteLine("Smartphone Nokia: ");
-            Smartphone nokia = new Nokia(numero: "555-1234", imei: "123456789", memoria: 64);
-            nokia.Ligar();
-            nokia.InstalarAplicativo("WhatsApp");
+// TODO: Realizar os testes com as classes Nokia e Iphone
 
-            Console.WriteLine("\n");
+//Testar classe Nokia
+//Instanciando objeto nokia
+Nokia nokia = new Nokia("12345678","00197001010000",128);
 
-            // Teste com a classe Iphone
-            Console.WriteLine("Smartphone iPhone: ");
-            Smartphone iphone = new Iphone(numero: "555-5678", imei: "987654321", memoria: 128, faceID: "123FaceID");
-            iphone.Ligar();
-            iphone.InstalarAplicativo("Instagram");
+//Chamando função Ligar() implementada na classe Smartphone
+nokia.Ligar();
 
-            Console.ReadLine(); // Aguarda pressionamento de tecla para encerrar
-        }
-    }
-}
+//Chamando função ReceberLigacao() implementada na classe Smartphone
+nokia.ReceberLigacao();
+
+//Chamando função InstalarAplicativo(nomeApp) sobrescrita na classe 
+nokia.InstalarAplicativo("TikTok");
+
+//Testar classe Iphone
+//Instanciando objeto iphone
+Iphone iphone = new Iphone("87654321","00895001013496",256);
+
+//Chamando função Ligar() implementada na classe Smartphone
+iphone.Ligar();
+
+//Chamando função ReceberLigacao() implementada na classe Smartphone
+iphone.ReceberLigacao();
+
+//Chamando função InstalarAplicativo(nomeApp) sobrescrita na classe 
+iphone.InstalarAplicativo("Instagram");
