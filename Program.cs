@@ -1,6 +1,6 @@
 ﻿﻿using DesafioPOO.Models;
 
-// TODO: Realizar os testes com as classes Nokia e Iphone
+// Realizar os testes com as classes Nokia e Iphone
 
 //Testar classe Nokia
 //Instanciando objeto nokia

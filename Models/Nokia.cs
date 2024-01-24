@@ -10,7 +10,7 @@ namespace DesafioPOO.Models
             Console.WriteLine($"Um smartphone do tipo Nokia foi criado com numero: {numero}");
         }
         
-        // Sobrescrever (implementando) o método "InstalarAplicativo"
+        // Sobrescrever (implementa) o método "InstalarAplicativo"
         public override void InstalarAplicativo(string nomeApp)
         {
             Console.WriteLine($"Nokia instalando {nomeApp}...");
